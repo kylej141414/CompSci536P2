@@ -1,3 +1,26 @@
-123
-+
-x
+bool  int   void  true  false  struct
+cin   cout  if    else  while  return  
+t4U345_
+98abc_
+_ab43
+// this is a comment
+## and so is this
+35678
+""
+"&!88"
+"use \n to denote a newline character"
+"include a quote like this \" and a backslash like this \\"
+// this is a comment
+## and so is this
+"unterminated
+"also unterminated \"
+"backslash followed by space: \ is not allowed"
+"bad escaped character: \a AND terminated"
+"bad escaped character: \a AND not terminated
+{      }      (      )      ;      
+,      .      <<     >>     ++
+--     +      -      *      /
+!      &&     ||     ==     !=
+<      >      <=     >=     =
+// this is a comment
+## and so is this
