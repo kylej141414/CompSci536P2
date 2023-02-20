@@ -185,7 +185,7 @@ return new Symbol(sym.EOF);
   CharNum.num += yytext().length();
 }
 
-\"((\\{NOTESCAPECHARACTER})|{SINGLECHARACTER)* {
+\"((\\{NOTESCAPECHARACTER})|{SINGLECHARACTER})* {
   // unterminated string literal with bad escaped character ignored
   ErrMsg.fatal(yyline+1, CharNum.num, 
             "unterminated string literal with bad escaped character ignored");
