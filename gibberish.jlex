@@ -60,7 +60,7 @@ DIGIT=        [0-9]
 SPACE=        [\040\t]
 LETTER=       [A-Za-z]
 ESCAPECHARACTER=        [nt'\"?\\]
-NOTESCAPECHARACTER=        [^nt'\"\?\\]
+NOTESCAPECHARACTER=        [^nt'\"?\\]
 SINGLECHARACTER=        [^\n\"\\]
 
 %implements java_cup.runtime.Scanner
