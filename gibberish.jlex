@@ -59,7 +59,7 @@ class CharNum {
 DIGIT=        [0-9]
 SPACE=        [\040\t]
 LETTER=       [A-Za-z]
-ESCAPECHARACTER=        [nt'\"\?\\]
+ESCAPECHARACTER=        [nt'\"?\\]
 NOTESCAPECHARACTER=        [^nt'\"\?\\]
 SINGLECHARACTER=        [^\n\"\\]
 
