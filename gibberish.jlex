@@ -175,21 +175,18 @@ return new Symbol(sym.EOF);
           
 \"((\\{ESCAPECHARACTER})|{SINGLECHARACTER})* {
   ErrMsg.fatal(yyline+1, CharNum.num, "unterminated string literal ignored");
-  // new line char num set to 1
   CharNum.num = 1;
 }
 
-\"((\\NOTESCAPECHARACTER)|{SINGLECHARACTER})*\" {
+\"((\\{ESCAPECHARACTER})|{SINGLECHARACTER}|\\{NOTESCAPECHARACTER})*\" {
   ErrMsg.fatal(yyline+1, CharNum.num, 
                         "string literal with bad escaped character ignored");
   CharNum.num += yytext().length();
 }
 
-\"((\\{NOTESCAPECHARACTER})|{SINGLECHARACTER})* {
-  // unterminated string literal with bad escaped character ignored
+\"((\\{ESCAPECHARACTER})|{SINGLECHARACTER}|\\{NOTESCAPECHARACTER})* {
   ErrMsg.fatal(yyline+1, CharNum.num, 
             "unterminated string literal with bad escaped character ignored");
-  // new line char num set to 1
   CharNum.num = 1;
 }          
           
