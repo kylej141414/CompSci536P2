@@ -344,7 +344,7 @@ return new Symbol(sym.EOF);
 }         
           
           
-((///)|(##)).* {
+((//)|(##)).* {
   CharNum.num = 1;
 }
 
